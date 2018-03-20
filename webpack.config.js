@@ -26,5 +26,9 @@ module.exports = {
 														template: "./src/index.html",
 														filename: "./index.html"
 													})
-	]
+	],
+	resolve:{
+		modules: ["node_modules"],
+		extensions: [".js", ".json", ".jsx", ".css"],
+	}
 };
