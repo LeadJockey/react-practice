@@ -6,7 +6,7 @@ const LabeledInput = props => {
 	return (
 		<div>
 			<Label text={props.text}/>
-			<Input value="" holer={props.holder} type="text"/>
+			<Input type={props.type} value={props.value} onChange={props.textChangeHandler} placeholder={props.placeholder} />
 		</div>
 	);
 };

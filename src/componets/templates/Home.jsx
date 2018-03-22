@@ -1,29 +1,21 @@
-import React        from "react";
-import ReactDOM     from "react-dom";
-import Title        from "../atoms/Title";
-import LabeledInput from "../molecules/LabeledInput";
+import React         from "react";
+import Title         from "../atoms/Title";
+import UnorderedList from "../molecules/UnorderedList";
+import SearchBar     from "../organisms/SearchBar";
+import Input         from "../atoms/Input";
 
-const App = () => {
+const Home = () => {
 	return (
 		<div>
-			<Title text="hello world1"/>
-			<LabeledInput text="test-label" holder="test-holder"/>
+			<Input/>
+			{/*<Title text="TODO LIST"/>*/}
+			{/*<SearchBar text="search" placeholder="search"/>*/}
+			{/*<UnorderedList todoList={[1,2,3,4,5]}/>*/}
 		</div>
 	);
 };
 
-// class App extends React.Component {
-// 	render() {
-// 		return (
-// 			<div>
-// 				<Title text="hello world1"/>
-// 				<LabeledInput text="test-label" holder="test-holder"/>
-// 			</div>
-// 		);
-// 	};
-// }
-
-export default App;
+export default Home;
 
 
 
